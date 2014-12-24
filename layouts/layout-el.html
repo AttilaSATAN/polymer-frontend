@@ -1,0 +1,13 @@
+<polymer-element name="layout-el" attributes="selected" noscript>
+    <template>
+
+        <core-toolbar>
+            <content select=".title"><!-- this will display "Home Page" --></content>
+            <core-item label="Home" active?="{{selected == 'home'}}"></core-item>
+            <core-item label="Demo" active?="{{selected == 'demo'}}"></core-item>
+        </core-toolbar>
+
+        <content><!-- your main content shows up here --></content>
+
+    </template>
+</polymer-element>
